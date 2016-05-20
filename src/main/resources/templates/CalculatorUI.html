@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	  xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>MicroCalculator UI</title>
+<link rel="stylesheet" type="text/css" th:href="@{/resources/style.css}"></link>
+</head>
+<body>
+	<form method=POST name="UI">
+		Enter your expression:
+		<P/>
+		<textarea rows="2" cols="80" name="expression"></textarea>
+		<P/>
+		<input type="submit" name="send" value="Evaluate Expression"/>
+		<hr>
+		<P/>
+		Here are your results:
+		<P/>
+		<textarea rows="4" cols="80" name="result"></textarea>
+		<P/>
+		<hr>
+		Here are the messages:
+		<textarea rows="4" cols="80" name="messages"></textarea>
+	</form>
+</body>
+</html>
